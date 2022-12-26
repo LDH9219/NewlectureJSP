@@ -19,7 +19,7 @@ public class NoticeService {
 		
 		return 0;
 	}
-	
+	//공지사항 공개 처리 1 (oids, cids를 배열로 받아 리스트 형태로 저장)
 	public int pubNoticeAll(int[] oids,int[] cids){
 		
 		List<String> oidsList = new ArrayList<>();
@@ -28,12 +28,12 @@ public class NoticeService {
 		
 		List<String> cidsList = new ArrayList<>();
 		for(int i=0; i<cids.length; i++)
-			oidsList.add(String.valueOf(cids[i])); //oidsList? -> cidsList로 수정가능성
+			cidsList.add(String.valueOf(cids[i]));
 
 		
 		return pubNoticeAll(oidsList, cidsList);		
 	}
-	
+	//공지사항 공개 처리 2 (List 형태의 oids, cids를 그대로 받아 join으로 합친 후 문자열로 반환)
 	public int pubNoticeAll(List<String> oids, List<String> cids){
 		
 		String oidsCSV = String.join(",", oids);
@@ -41,7 +41,7 @@ public class NoticeService {
 		
 		return pubNoticeAll(oidsCSV, cidsCSV);		
 	}
-	
+	//공지사항 공개 처리 3 (문자열 형태로 받아 SQL 문에 삽입하여 실행)
 	public int pubNoticeAll(String oidsCSV, String cidsCSV){
 		
 		int result = 0;
@@ -73,7 +73,7 @@ public class NoticeService {
 				
 		return result;		
 	}
-	
+	//공지사항 등록
 	public int insertNotice(Notice notice){
 		int result = 0;
 		
