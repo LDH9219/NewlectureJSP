@@ -17,9 +17,9 @@ import javax.servlet.http.Part;
 import com.newlecture.web.entity.Notice;
 import com.newlecture.web.service.NoticeService;
 @MultipartConfig(
-		fileSizeThreshold = 1024*1024,
-		maxFileSize = 1024*1024*50,
-		maxRequestSize = 1024*1024*50*5
+		fileSizeThreshold = 1024*1024, //메모리에 저장되는 임시 파일크기, 1mb
+		maxFileSize = 1024*1024*50, //업로드할 파일의 최대 크기 지정, 50mb
+		maxRequestSize = 1024*1024*50*5 //request시 최대 크기 250
 )
 @WebServlet("/admin/board/notice/reg")
 public class RegController extends HttpServlet {
