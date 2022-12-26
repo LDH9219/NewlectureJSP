@@ -124,17 +124,17 @@ public class NoticeService {
 	}
 	
 	
-	
+	//공지사항 목록 출력 1
 	public List<NoticeView> getNoticeList(){
 		
 		return getNoticeList("title","",1);
 	}
-	
+	//공지사항 목록 출력 2 (입력값 : 정수형 페이지 번호 , 반환값 : 제목, 쿼리, 페이지번호)
 	public List<NoticeView> getNoticeList(int page){
 		
 		return getNoticeList("title","",page);
 	}
-	
+	//공지사항 목록 출력 3 ( 검색기능 이용 시 출력, field, 쿼리, 페이지를 입력받음)
 	public List<NoticeView> getNoticeList(
 			String field /* TITLE, WRITER_ID */,
 			String query, /* A */
@@ -201,7 +201,7 @@ public class NoticeService {
 		
 		return list;
 	}
-	
+	// 사용자에게 보여지는 공지사항 목록 출력 (WHERE PUB=1)
 	public List<NoticeView> getNoticePubList(String field, String query, int page) {
 		List<NoticeView> list = new ArrayList<>();
 		
