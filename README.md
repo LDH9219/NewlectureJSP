@@ -1,7 +1,7 @@
 # NewlectureJSP
 이 레포지토리는 ```2022/11/4 ~ 12/23``` 까지 <a href ="https://www.youtube.com/watch?v=drCj2k50j_k&list=PLq8wAnVUcTFVOtENMsujSgtv2TOsMy8zd"> Newlecture강의</a> 를 보고 실습한 파일을 올린 레포지토리이다.    
 
-클론코딩을 하면서 정리한 파일들은 <a href = "https://github.com/LDH9219/JSP_servlet">이곳</a>에 보관중이며, 수정중에 있다.
+클론코딩을 하면서 정리한 파일들은 <a href = "https://github.com/LDH9219/JSP_servlet">이곳</a>에 보관중이다.
 
 본 README에서는 아래와 같은 목차를 다룬다.
 
